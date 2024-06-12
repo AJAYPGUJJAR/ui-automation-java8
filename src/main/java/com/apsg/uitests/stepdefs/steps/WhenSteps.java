@@ -7,9 +7,14 @@ import io.cucumber.java.en.When;
 
 public class WhenSteps {
 
+    @When("I add {string} to the inputfield {string}")
+    public void iAddToTheInputfield(String value, String selector) {
+        new SetInputField().addInput(value, selector);
+    }
+
     @When("I set {string} to the inputfield {string}")
     public void iSetToTheInputfield(String value, String selector) {
-        new SetInputField().addInput(value, selector);
+        new SetInputField().setInput(value, selector);
     }
 
     @And("I press {string}")
