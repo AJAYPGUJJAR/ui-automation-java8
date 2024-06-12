@@ -19,7 +19,7 @@ public class WebdriverSelector {
             if (System.getProperty("os.name").contains("Windows")) {
                 filePath = new File("src/test/resources/webdriver/win/chrome/chromedriver.exe");
             } else {
-                filePath = new File("src/test/resources/webdrivers/mac/chrome/chromedriver");
+                filePath = new File("src/test/resources/webdriver/mac/chrome/chromedriver");
             }
             System.setProperty("webdriver.chrome.driver", filePath.getPath());
             System.setProperty("webdriver.chrome.silentoutput", "true");
